@@ -34,6 +34,11 @@ export class Card extends Node {
         label.text = this.index
         label.y = 40
         label.x = 40
+        label.elm.style.position  = "absolute"
+        label.elm.style.width = "10px"
+        label.elm.style.height = "10px"
+        label.elm.style.fontSize = "20px"
+        label.elm.style.lineHeight = "1"
         this.label = label
         this.addChild(this.label)
     }
