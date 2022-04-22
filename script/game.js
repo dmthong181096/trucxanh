@@ -17,7 +17,7 @@ class Game extends Node {
         this.canSelfClick = true;
         this.firstCard = null;
         this.secondCard = null;
-        this.score = 500 ;
+        this.score = 1000 ;
         this.countRight = 0;
         this.valueCards = [];
         this._createNewGame();
