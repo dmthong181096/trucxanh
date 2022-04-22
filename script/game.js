@@ -38,11 +38,19 @@ class Game extends Node {
         this.elementScore = this._createScore(this.score);
     }
     resetGame() {
+        // this.isClickedReset = true
+        if (this.isClickedReset == true) {
+            return
+        } 
         let element = document.getElementsByTagName("div")[0];
         element.innerHTML = " ";
+        setTimeout(() => {
+            this.isClickedReset=false
+        }, 5000);
         this.playMusic(this.musics.playGame)
         this._load();
         this.play();
+        this.isClickedReset = true
     }
     removeAll(text = "") {
         let element = document.getElementsByTagName("div")[0];
